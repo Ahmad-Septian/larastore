@@ -4,10 +4,6 @@ body {
   height: 100vh;
 }
 
-.navbar button {
-  margin-right: 200px !important;
-}
-
 .navbar .navbar-nav .nav-item {
   color: black;
 }
@@ -17,14 +13,6 @@ body {
 }
 
 .navbar .history {
-  color: black;
-}
-
-.navbar .cart {
-  margin-left: 180px;
-}
-
-.navbar .navbar-nav .category {
   color: black;
 }
 
@@ -115,13 +103,6 @@ body {
 
 .section-all-product .card {
   margin-bottom: 30px;
-  border: none;
-}
-
-.section-all-product h1 {
-  font-size: 25px;
-  color: #fafafa;
-  margin-top: 30px;
 }
 
 .section-all-product a {
@@ -278,12 +259,6 @@ body {
   .navbar .navbar-brand {
     visibility: visible;
   }
-  .navbar .cart {
-    margin-left: 900px;
-  }
-  .navbar .home {
-    margin-left: -1000px;
-  }
   .breadcrumb {
     background: none;
   }
@@ -351,18 +326,11 @@ body {
   }
   .section-all-product .card {
     max-width: 250px;
-    border: none;
     height: 350px !important;
   }
   .section-all-product .card img {
     max-height: 250px;
     max-width: 250px;
-    border: none;
-  }
-  .section-all-product h1 {
-    margin-top: 50px;
-    font-size: 35px;
-    color: #fafafa;
   }
   .section-category h1 {
     margin-top: 50px;

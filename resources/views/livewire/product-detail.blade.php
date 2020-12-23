@@ -23,31 +23,33 @@
                         <h2>{{$product->nama}}</h2>
                         <h3><strong>Rp. {{number_format($product->harga)}}</strong></h3>
                         <hr>
-                        {{-- <h3>Descriptions</h3>
-                        <p>- Kaos iconic untuk tampilan kasual</p>
-                        <p>- Warna Hitam</p>
-                        <p>- Regular Fit</p> --}}
                     </div>
                 </div>
                 <div class="col-12 col-lg-5">
-                    <form action="" wire:submit.prevent="masukanKeranjang">
+                   
                         <div class="card">
                             <div class="card-body">
                              <h2>Informations</h2>
                              <hr>
                              @if ($product->stok > 1)
-                             <span class="badge badge-success"><i class="fas fa-check"></i>Stok Ready</span>
+                                <span class="badge badge-success"><i class="fas fa-check"></i>Stok Ready</span>
                              @else
-                             <span class="badge badge-danger"><i class="fas fa-times"></i>Stok Habis</span>
+                                <span class="badge badge-danger"><i class="fas fa-times"></i>Stok Habis</span>
                              @endif
-                             <table class="table-responsive mb-5">
+                             <form action="" wire:submit.prevent="masukanKeranjang">
+                                 <table class="table-responsive mb-5">
                                  <tr>
                                      <th>
                                          <th width="50%" for="size">Size</th>
                                          <td class="text-right" width="50%" >
                                              <select id="size" name="size" wire:model="size">
-                                                 <option value="">{{$product->size}}</option>
+                                                 <option value="{{$product->size}}">{{$product->size}}</option>
                                                </select>
+                                               @error('size')
+                                                 <span class="invalid-feedback" role="alert">
+                                                    <strong>{{ $message }}</strong>
+                                                </span>
+                                                @enderror
                                          </td>
                                      </th>
                                  </tr>
@@ -65,15 +67,17 @@
                                      </td>
                                     </th>
                                  </tr>
-                             </table>
-                             <hr>
-                             <td colspan="3">
-                                 <button type="submit" class="btn btn-pesan btn-block text-white" @if ($product->stok == 0) disabled
-                                 @endif><i class="fas fa-shopping-cart"></i>Masukan Keranjang</button>
-                             </td>
+                                 <hr>
+                                 <td colspan="3">
+                                     <button type="submit" class="btn btn-pesan mt-4 btn-block text-white" @if ($product->stok == 0) disabled
+                                     @endif><i class="fas fa-shopping-cart"></i>Masukan Keranjang</button>
+                                 </td>
+                                </table>
+                            </form>
+                            
                             </div>
-                         </div>
-                    </form>
+                        </div>
+                   
                    
                 </div>
             </div>
