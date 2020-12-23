@@ -30,7 +30,8 @@ class ProductRequest extends FormRequest
             'jenis_bahan' => 'required',
             'berat'=> 'required',
             'gambar'=>'required|image',
-            'kategori_id' =>'required|integer|exists:kategoris,id'
+            'kategori_id' =>'required|integer|exists:kategoris,id',
+            'size' => 'string|in:S,M,L,XL'
         ];
     }
 }

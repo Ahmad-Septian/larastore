@@ -37,6 +37,7 @@
                         <th>Kategori</th>
                         <th>Harga</th>
                         <th>Stok</th>
+                        <th>Size</th>
                         <th>Jenis Bahan</th>
                         <th>Berat</th>
                         <th>Action</th>
@@ -53,6 +54,7 @@
                             <td>{{$item->kategori->nama}}</td>
                             <td>Rp. {{number_format($item->harga)}}</td>
                             <td>{{$item->stok}}</td>
+                            <td>{{$item->size}}</td>
                             <td>{{$item->jenis_bahan}}</td>
                             <td>{{$item->berat}}</td>
                             <td>

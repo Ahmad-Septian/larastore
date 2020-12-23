@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Larastore</title>
+    <link rel="stylesheet" href="frontend/libraries/boostrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="frontend/libraries/xzoom/xzoom.css">
+    <link rel="stylesheet" href="frontend/styles/style.css">
+    <link rel="stylesheet" href="frontend/libraries/fontawesome/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navbar  -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+            <a class="navbar-brand" href="#"><strong>LaraStore</strong></a>
+            <div class="cart">
+                <a class=" navbar-brand btn" href="keranjang.html"><i class="fa fa-shopping-cart "></i></a>   
+            </div>
+            <a class="  nav-item navbar-brand ml-auto" href="#"><i class="fas fa-user"></i></a>
+              <button class="navbar-toggler mr-auto" type="button" data-toggle="collapse"     data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"           aria-label="Toggle navigation">
+             <span class="navbar-toggler-icon"></span>
+             </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ">
+                    <a class=" home nav-item nav-link" href="index.html">Home</a>
+                    <li class="nav-item dropdown ">
+                        <a class="nav-link dropdown-toggle category" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Category
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <a class="dropdown-item" href="#">T-Shirt</a>
+                          <a class="dropdown-item" href="#">Shirt</a>
+                          <a class="dropdown-item" href="#">Jeans</a>
+                          <a class="dropdown-item" href="#">Sneakers</a>
+                          <a class="dropdown-item" href="#">Hoodie</a>
+                          <div class="dropdown-divider"></div>
+                          <a class="dropdown-item" href="all-product.html">All Product</a>
+                        </div>
+                      </li>
+                </form>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Breadcrumb -->
+    <div class="container">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+              <li class="breadcrumb-item active" aria-current="page"></li> <strong>Product Details</strong></li>
+            </ol>
+          </nav>
+    </div>
+    
+    <main>
+         <!-- All Category -->
+        <section class="section section-product-details">
+            <div class="container xzoom-container">
+                <div class="row">
+                    <div class="col-12 col-lg-6">
+                        <div class="card product-details">
+                            <div class="card-body">
+                                <img src="frontend/images/men/uniqlo_3.jpg" alt="" class=" xzoom" id="xzoom-default" xoriginal="frontend/images/men/uniqlo_3.jpg">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-3">
+                        <div class="card product-details">
+                            <br>
+                            <h2>T-shirt Uniqlo UT-3</h2>
+                            <h3><strong>Rp.199.000</strong></h3>
+                            <hr>
+                            <h3>Descriptions</h3>
+                            <p>- Kaos iconic untuk tampilan kasual</p>
+                            <p>- Warna Hitam</p>
+                            <p>- Regular Fit</p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-3">
+                        <div class="card">
+                           <div class="card-body">
+                            <h2>Informations</h2>
+                            <hr>
+                            <table class="table-responsive mb-5">
+                                <tr>
+                                    <th>
+                                        <th width="50%">Size</th>
+                                        <td class="text-right" width="50%">
+                                            <select id="cars">
+                                                <option value="Small">Small</option>
+                                                <option value="Medium">Medium</option>
+                                                <option value="Large">Large</option>
+                                                <option value="XL">Extra Large</option>
+                                              </select>
+                                        </td>
+                                    </th>
+                                </tr>
+                            </table>
+                            <hr>
+                            <div class="btn-pesan">
+                                <a href="#" class="btn btn-block"><i class="fas fa-shopping-cart"></i> Pesan</a>
+                            </div>
+                           </div>
+                        </div>
+                    </div>
+                </div>
+           </div>
+        </section>
+
+        
+
+        <section class="section-service" style="padding-bottom: 80px;">
+            <div class="container pt-5 pb-5">
+                <div class="row justify-content-center mb-5">
+                    <h1>Service</h1>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-sm-12">
+                        <div class="row">
+                            <div class="col-sm-12 col-lg-4">
+                                <h5>LOCATION</h5>
+                                <ul class="list-unstyled">
+                                    <li><img src="frontend/images/icon-indonesia.png" class="icon" alt=""></li>
+                                </ul>
+                            </div>
+                            <div class="col-sm-12 col-lg-4">
+                                <h5>PAYMENT</h5>
+                                <ul class="list-unstyled">
+                                    <li>
+                                        <img src="frontend/images/mastercard-icon.png" class="icon" alt="">
+                                    </li>
+                                    <li>
+                                        <img src="frontend/images/logo-bank-bri.jpg" class="icon" alt="">
+                                    </li>
+                                    <li>
+                                        <img src="frontend/images/logo-bni.png" class="icon" alt="">
+                                    </li>
+                                    <li>
+                                        <img src="frontend/images/logo-mandiri.png" class="icon" alt="">
+                                    </li>
+                                    <li>
+                                        <img src="frontend/images/logo-bca.jpg" class="icon" alt="">
+                                    </li>
+
+                                </ul>
+                            </div>
+                            <div class="col-sm-12 col-lg-4">
+                                <h5>DELIVERY SERVICE</h5>
+                                <ul class="list-unstyled delivery1">
+                                    <li>
+                                        <img src="frontend/images/logo-jne.png" class="icon" alt="">
+                                    </li>
+                                    <li>
+                                        <img src="frontend/images/logo-jnt.jpg" class="icon" alt="">
+                                    </li>
+                                    <li>
+                                        <img src="frontend/images/logo-sicepat.jpg" class="icon" alt="">
+                                    </li>
+                                    <li>
+                                        <img src="frontend/images/logo-pos.jpg" class="icon" alt="">
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="section-footer mt-5 mb-4 border-top">
+        <div class="container pt-5 pb-5">
+            <div class="row justify-content-center">
+                <div class="col-sm-12">
+                    <div class="row">
+                        <div class="col-sm-12 col-lg-3">
+                            <h5>FEATURES</h5>
+                            <ul class="list-unstyled">
+                                <li><a href="#">Reviews</a></li>
+                                <li>
+                                    <a href="#">Community</a></li>
+                                <li>
+                                    <a href="#">Social Media Kit</a>
+                                </li>
+                                <li>
+                                    <a href="#">Affiliate</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-12 col-lg-3">
+                            <h5>ACCOUNT</h5>
+                            <ul class="list-unstyled">
+                                <li><a href="#">Refund</a></li>
+                                <li>
+                                    <a href="#">Security</a></li>
+                                <li>
+                                    <a href="#">Rewards</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-12 col-lg-3">
+                            <h5>COMPANY</h5>
+                            <ul class="list-unstyled">
+                                <li><a href="#">Carrer</a></li>
+                                <li>
+                                    <a href="#">Help Center</a></li>
+                                <li>
+                                    <a href="#">Media</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-12 col-lg-3">
+                            <h5>GET CONNECTED</h5>
+                            <ul class="list-unstyled">
+                                <li><a href="#">Jakarta Selatan</a></li>
+                                <li>
+                                    <a href="#">Indonesia</a></li>
+                                <li>
+                                    <a href="#">0821 - 222 - 1123</a>
+                                </li>
+                                <li>
+                                    <a href="#">support@nomads.com</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row border-top justify-content-center align-items-center pt-4">
+                <div class="col-auto text-gray-500 font-weight-light text-white pb-4">
+                    2019 Copyright LARASTORE • All rights reserved • Made in Jakarta
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="frontend/libraries/popper/popper.min.js"></script>
+    <script src="frontend/libraries/jquery/jquery-3.5.1.min.js"></script>
+    <script src="frontend/libraries/boostrap/js/bootstrap.min.js"></script>
+    <script src="frontend/libraries/xzoom/xzoom.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('.xzoom').xzoom({
+                zoomWidth: 500,
+                title: false,
+                tint: '#333',
+                Xoffset: 15
+            });
+        });
+    </script>
+</body>
+</html>

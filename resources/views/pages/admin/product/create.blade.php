@@ -52,6 +52,15 @@
                     <input type="text" class="form-control" name="stok" placeholder="stok" value="{{old('stok')}}">
                 </div>
                 <div class="form-group">
+                    <label for="size">Size</label>
+                    <select name="size" id="" required class="form-control">
+                    <option value="S">S</option>
+                    <option value="M">M</option>
+                    <option value="L">L</option>
+                    <option value="XL">XL</option>
+                    </select>
+                </div>
+                <div class="form-group">
                     <label for="jenis_bahan">Jenis Bahan</label>
                     <input type="text" class="form-control" name="jenis_bahan" placeholder="Jenis Bahan" value="{{old('jenis_bahan')}}">
                 </div>

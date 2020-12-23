@@ -1,0 +1,382 @@
+body{
+    background-color: #fafafa;
+    font-family: 'Roboto Condensed', sans-serif;
+    height: 100vh;
+}
+
+
+.navbar{
+    // button{
+    //     margin-right: 200px !important;
+    // }
+
+    .navbar-nav{
+        .nav-item{
+            color: black;
+        }   
+        }
+
+       .category{
+           color: black;
+
+       }
+       .history{
+           color: black;
+       }
+    
+}
+
+.section-header{
+    .header{
+        padding: 150px 0 160px;
+        background-image: url(../images/jumbotron_shirt.jpg);
+        background-size: cover;
+        position: relative;
+        margin-bottom: 100px;
+    
+        h1,
+        p {
+            color:whitesmoke;
+            text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+        }
+    
+        h1 {
+            font-family: 'Roboto Condensed', sans-serif;
+            font-weight: lighter;
+            font-size: 30px;
+        }
+        p {
+            font-size: 15px;
+            ;
+        }
+    
+        .btn-get-started {
+            background-color:black;
+            color: #ffffff;
+            &:hover {
+                background-color: #fafafa;
+                color: black;
+            }
+        }
+    
+       
+    }
+
+    .header {
+        .container{
+            z-index: 1;
+            position: relative;
+        }
+        
+    }
+    
+    .header::after {
+        content: '';
+        display: block;
+        width: 100%;
+        height: 80%;
+        position: absolute;
+        margin-bottom: 0px;
+        background-image: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0,));
+        bottom: 0;
+    }
+}
+
+.section-new-arrivals{
+    background-color: black;
+    .row{
+        margin-top: 100px;
+    }
+    .card{
+       margin-bottom: 30px;
+       border: none;
+       img{
+        max-height: 200px;
+        max-width: 200px;
+        border: none;
+    }
+     } 
+
+     h1{
+         font-size: 25px;
+         color: #fafafa;
+         margin-top: 30px;
+     }
+     a{
+        text-decoration: none;
+        color: black;
+    }
+
+}
+
+.section-all-product{
+        margin-top: -100px;
+    .card{
+       margin-bottom: 30px;
+     } 
+
+     a{
+        text-decoration: none;
+        color: black;
+    }
+
+}
+
+.section-category{
+   .card-category{
+    min-height: 250px;
+    background-color: #dddddd;
+    color: #ffffff;
+    padding: 30px;
+    background-size: cover;
+    margin-bottom: 20px;
+   }
+   .category-button {
+    .btn-category {
+        background-color:black;
+        color: #ffffff;
+        &:hover {
+            background-color: #fafafa;
+            color: black;
+        }
+    }
+}
+    h1{
+       margin-top: 50px;
+    }
+
+    img{
+        margin-bottom: 20px;
+        border-radius: 8px;
+    }
+    
+}
+
+.section-product-details{
+    .product-details{
+        border: 0;
+        border-radius: 10px;
+        background-color: #fafafa;
+    }
+    .xzoom-container {
+        display: block;
+        .xzoom {
+            width: 100%;
+            box-shadow: none;
+            margin-bottom: 10px;
+        }
+        .xactive {
+            border: 5px solid #071C4D;
+            box-shadow: none;
+        }
+    }
+
+    .btn-pesan{
+        background-color: black;
+        a{
+            color: #fafafa;
+        }
+
+        &:hover{
+            background-color: grey;
+            a{
+                color: white;
+            }
+        }
+    }
+}
+
+.section-cart{
+    .btn-checkout{
+        background-color: black;
+        a{
+            color: #fafafa;
+        }
+
+        &:hover{
+            background-color: grey;
+            a{
+                color: white;
+            }
+        }
+    }
+}
+
+.section-checkout{
+    .btn-checkout{
+        background-color: black;
+        color: #fafafa;
+
+        &:hover{
+            background-color: grey;
+            color: #fafafa;
+        }
+    }
+}
+
+
+.section-featured-brand{
+    justify-content: center;
+    img{
+        max-width: 200px;
+        margin: 30px 100px;
+    }
+}
+
+.section-service {
+    margin-top: 80px;
+    h5 {
+        margin-bottom: 32px;
+    }
+    .icon {
+        width: 50px;
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);
+        margin-bottom: 10px;
+    }
+    .delivery1 {
+        position: absolute;
+        left: auto;
+        height: 200px;
+        width: 100px;
+    }
+    .delivery2 {
+        position: absolute;
+        left: 100px;
+        height: 200px;
+        width: 200px;
+    }
+}
+
+.section-footer {
+    background-color: black;
+    h5{
+        color: #fafafa;
+    }
+    ul {
+        li {
+        
+            a {
+                color:#fafafa;
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+
+//  Version
+@media (min-width: 992px) { 
+    .navbar{
+        .navbar-brand{
+            visibility: visible;
+        }
+
+    }  
+
+    .breadcrumb{
+        background: none;
+
+        a{
+            color: black;
+            text-decoration: none;
+        }
+    }
+
+    .section-header{
+        .header{
+        h1,
+        p {
+            color:whitesmoke;
+            text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+        }
+    
+        h1 {
+            font-family: 'Roboto Condensed', sans-serif;
+            font-weight: bold;
+            font-size: 50px;
+        }
+        p {
+            font-size: 22px;
+            ;
+        }
+        .btn-get-started {
+            background-color:black;
+            color: #ffffff;
+            &:hover {
+                background-color: #fafafa;
+                color: black;
+            }
+        }
+        }
+
+        .header {
+            .container{
+                z-index: 1;
+                position: relative;
+            }
+            
+        }
+        
+        .header::after {
+            content: '';
+            display: block;
+            width: 100%;
+            height: 80%;
+            position: absolute;
+            margin-bottom: 0px;
+            background-image: linear-gradient(to top, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0,));
+            bottom: 0;
+        }
+    }
+    
+    .section-new-arrivals{
+        background-color: black;
+        margin-bottom: 50px;
+        .card{
+            max-width: 200px;
+            border: none;
+            height: 350px !important;
+           img{
+               max-height: 200px;
+               max-width: 200px;
+               border: none;
+           }
+         }
+         h1{
+             margin-top: 50px;
+            font-size: 35px;
+            color: #fafafa;
+        }
+       
+    }
+
+    .section-all-product{
+        margin-bottom: 50px;
+        .card{
+            max-width: 250px;
+            height: 350px !important;
+           img{
+               max-height: 250px;
+               max-width: 250px;
+              
+           }
+         }
+       
+    }
+
+    .section-category{
+        h1{
+           margin-top: 50px;
+        }
+        
+    }
+
+    .section-featured-brand{
+        justify-content: center;
+        img{
+            max-width: 200px;
+            margin: 0;
+        }
+    }
+
+}
